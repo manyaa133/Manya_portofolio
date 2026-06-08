@@ -1,0 +1,259 @@
+.portfolio {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 48px 32px 64px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 24px;
+  margin-bottom: 28px;
+  border-radius: 22px;
+  background: rgba(111, 105, 126, 0.08);
+  border: 1px solid rgba(111, 105, 126, 0.15);
+  box-shadow: var(--shadow-subtle);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.topbar-brand {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #494559;
+}
+
+.topbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.topbar-links a {
+  color: #5f5a6b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+
+.topbar-links a:hover,
+.topbar-links a:focus-visible {
+  color: var(--text-h);
+  background: rgba(111, 105, 126, 0.12);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 48px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero-copy {
+  flex: 1 1 520px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.24em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.hero-copy h1 {
+  margin: 0 0 18px;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 0.95;
+  color: var(--text-h);
+}
+
+.intro {
+  margin: 0 0 22px;
+  max-width: 760px;
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.hero-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  color: var(--text);
+  font-size: 0.99rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 240px;
+}
+
+.hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  min-height: 52px;
+  border-radius: 18px;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text-h);
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.hero-actions a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  background: rgba(107, 100, 120, 0.14);
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.profile-links a {
+  flex: 1 1 120px;
+  text-align: center;
+  background: rgba(107, 100, 120, 0.08);
+  color: var(--text-h);
+  border: 1px solid rgba(107, 100, 120, 0.18);
+}
+
+.section {
+  margin-bottom: 42px;
+  text-align: left;
+}
+
+.section h2 {
+  margin-bottom: 18px;
+  font-size: 1.65rem;
+  color: var(--text-h);
+}
+
+.section p,
+.section li {
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.grid,
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card,
+.education-card,
+.project-card {
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  box-shadow: var(--shadow-subtle);
+}
+
+.card h3,
+.education-card h3,
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+  color: var(--text-h);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.chips span {
+  display: inline-flex;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  color: var(--text-h);
+  font-size: 0.95rem;
+}
+
+.card ul,
+.education-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.card li,
+.education-card li {
+  margin-bottom: 10px;
+}
+
+.project-list {
+  display: grid;
+  gap: 20px;
+}
+
+.project-card a {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.education-card p {
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .portfolio {
+    padding: 32px 20px 48px;
+  }
+
+  .hero {
+    gap: 24px;
+  }
+}

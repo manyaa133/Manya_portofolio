@@ -1,0 +1,78 @@
+:root {
+  --text: #4b4a57;
+  --text-h: #1c1826;
+  --bg: #f6f5f7;
+  --border: #dcdae0;
+  --accent: #6b6478;
+  --accent-bg: rgba(107, 100, 120, 0.12);
+  --panel: #f5f3f7;
+  --card-bg: #ffffff;
+  --shadow: rgba(30, 28, 42, 0.08) 0 18px 40px -20px;
+  --shadow-subtle: rgba(30, 28, 42, 0.06) 0 10px 20px -10px;
+  --sans: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Inter', 'Segoe UI', Roboto, sans-serif;
+
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #c2c3cf;
+    --text-h: #eff0f6;
+    --bg: #11151f;
+    --border: #222734;
+    --accent: #7e7b91;
+    --accent-bg: rgba(126, 123, 145, 0.16);
+    --panel: #161b2b;
+    --card-bg: #151b29;
+    --shadow: rgba(0, 0, 0, 0.42) 0 18px 40px -20px;
+    --shadow-subtle: rgba(0, 0, 0, 0.28) 0 10px 20px -10px;
+  }
+}
